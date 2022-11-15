@@ -1,4 +1,4 @@
-const aliquot = (number: number, div: number, sign?: number): number => {
+function aliquot(number: number, div: number, sign?: number): number {
   let s = 1
   if (div < 0) div = -div
   if (number < 0) s = -1, number = -number

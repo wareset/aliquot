@@ -1,13 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-index.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
-});
-
-exports.default = (e, r, t) => {
+}), exports.default = function(e, r, t) {
     var a = 1;
     r < 0 && (r = -r), e < 0 && (a = -1, e = -e);
     var o = (e += r) % r;

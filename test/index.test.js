@@ -1,6 +1,6 @@
 const aliquot = require('../index').default
 
-test('Base:', () => {
+test('Base:', function() {
   expect(aliquot(0, 7)).toEqual(0)
   expect(aliquot(3.4, 7)).toEqual(0)
   expect(aliquot(3.5, 7)).toEqual(7)
@@ -18,7 +18,7 @@ test('Base:', () => {
   expect(aliquot(-7.0000000001, 7)).toEqual(-7)
 })
 
-test('Advn:', () => {
+test('Advn:', function() {
   expect(aliquot(3.4, 7, -1)).toEqual(0)
   expect(aliquot(3.4, 7, 1)).toEqual(7)
 
@@ -36,7 +36,7 @@ test('Advn:', () => {
   expect(aliquot(-7, 7, 1)).toEqual(-7)
 })
 
-test('Hard:', () => {
+test('Hard:', function() {
   for (let i = 1; i < 100; i++) {
     expect(aliquot(Math.random(), 7)).toEqual(0)
     expect(aliquot(Math.random() + 4, 7)).toEqual(7)
@@ -58,7 +58,7 @@ test('Hard:', () => {
   }
 })
 
-test('More:', () => {
+test('More:', function() {
   expect(aliquot(3.4, 7, -2)).toEqual(-7)
   expect(aliquot(3.4, 7, 2)).toEqual(14)
 
